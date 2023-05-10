@@ -48,6 +48,15 @@ console.log(numbers); // irá retornar os números de forma inversa
 
 const number = [1, -1, 2, 3];
 
-const filtered = numbers.filter(n => n >= 0);
+//const items = numbers
+//.filter(n => n >= 0)
+//.map(n => ({ value: n })) 
+//.filter(obj => obj.value > 1)
+//.map(obj => obj.value); /adicionará apenas os númerospositivos maiores que um no objetocom chave e valor
 
-console.log(filtered)
+const sum = numbers.reduce((acumulator, currenteValue) => {
+    return acumulator + currenteValue;
+}, 0); // retornará a soma dos números em forma de apenas um array
+
+console.log(sum);
+
